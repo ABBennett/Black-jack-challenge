@@ -46,13 +46,21 @@ describe Hand do
 
     it "returns the correct score" do
       expect(hand.calculate_hand).to eq(20)
+
+    end
+
+    it "returns the correct score" do
       expect(hand_2.calculate_hand).to eq(29)
     end
 
     it "determines which ace value to use" do
       expect(hand_3.calculate_hand).to eq(21)
+    end
+
+    it "determines which ace value to use" do
       expect(hand_4.calculate_hand).to eq(12)
     end
+
 
   end
 end
